@@ -1,0 +1,24 @@
+﻿@model kknotes.Dto.NoteDto
+
+    <form method="post" asp-action="Save">
+        <div class="card">
+            <div class="card-header">
+                <h5>Create or edit note</h5>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col form-group">
+                        <input class="form-control" asp-for="Id" placeholder="Id" hidden />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col form-group">
+                        <input class="form-control" asp-for="Content" placeholder="Note content" />
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </form>
